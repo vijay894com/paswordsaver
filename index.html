@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX-Personal password manager</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo" style="font-weight: bolder;">
+            Pass-X
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Pricing</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Password manager</h1>
+        <p>We're thrilled to have you here.Your digital life
+            contains a myraid of passwords, and we know how challenging it can be to manage them all.That's why we're
+            here to make it easy for you.
+        </p>
+        <h2>Your passwords</h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th> <button (click)="deleteFunc('cricket')">Delete</button> </th>
+            </tr>
+            <tr>
+                <td>Vijay.com</td>
+                <td>some@gmail.com</td>
+                <td>some@gmail.com</td>
+                <td>some@gmail.com</td>
+            </tr>
+            <tr>
+                <td>vNarwade.com</td>
+                <td>vijay.@gmail.com</td>
+                <td>some@gmail.com</td>
+                <td>some@gmail.com</td>
+            </tr>
+
+        </table>
+        <h2>Add a password</h2>
+
+        <form>
+            <label for="website" >Website:</label> <br>
+            <input type="text" id="website" name="website" required> <br>
+           
+            <label for="username">
+                Username:
+            </label> <br>
+            <input type="text" name="username" id="username" required>
+            <br>
+
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" required> <br> <br>
+            <button type="button" value="Submit" class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
